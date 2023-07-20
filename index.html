@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Include the Tailwind CSS library -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Wrapper div to center the content -->
+    <div class="Wrapper h-screen bg-gray-800 flex justify-center items-center overflow-auto">
+        <!-- Todo container with a rounded border -->
+        <div
+            class="Todo-Container font-mono p-5 ring-1 ring-blue-600 bg-gray-700 max-w-md mx-auto rounded-sm mx-h-full">
+            <!-- Todo App title -->
+            <h1 class="text-3xl font-semibold mb-3 text-red-500">Todo App</h1>
+            <!-- Todo input and submit button container -->
+            <div class="Todo-Input-Container flex">
+                <!-- Todo input field -->
+                <input class="p-2 rounded-md flex-1" type="text" placeholder="Add A Todo..." id="inpEl">
+                <!-- Submit button for adding a todo -->
+                <input class="ml-2 py-1 px-3 rounded-md text-white cursor-pointer bg-red-500" type="submit"
+                    value="Submit A Todo" id="submitEl">
+            </div>
+            <!-- Container to display all tasks -->
+            <div class="Todos-Container mt-4 text-xl font-bold text-red-500" id="todoContainer">
+                <!-- Title for the task list -->
+                <h2>All Tasks:</h2>
+                <!-- Task elements will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
